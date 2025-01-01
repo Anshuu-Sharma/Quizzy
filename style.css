@@ -16,7 +16,7 @@ body,#main_container{
     justify-content: center;
 }
 
-:where(#quiz_container, #config_container){
+:where(#quiz_container, #config_container, #result_container){
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -83,7 +83,7 @@ body,#main_container{
 }
 
 #quiz_container{
-    /* display: none; */
+    display: none;
     max-width: 600px;
 }
 .quiz_header{
@@ -153,4 +153,22 @@ li{
     gap: .2rem;
     border: none;
     border-radius: 8px;
+}
+
+#result_container{
+    max-width: 600px;
+    padding: 50px;
+}
+#result_container p{
+    width: 400px;
+    text-align: center;
+}
+#result_container button{
+    background-color: #6366F1;
+    color: white;
+    padding: 15px 25px;
+    gap: .2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
 }
