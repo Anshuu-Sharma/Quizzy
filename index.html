@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuizTIme</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
     <div id="main_container">
-        <div id="container">
-            <h1>Quiz Configuration</h1>
-            <p>Select Category</p>
-            <div id="options">
-                <div class="elem" id="A">Programming</div>
-                <div class="elem" id="B">Geography</div>
-                <div class="elem" id="C">Mathematics</div>
-                <div class="elem" id="D">Entertainment</div>
-            </div>
-            <p>No. of Questions</p>
-            <div class="numbers">5</div>
-            <div class="numbers">10</div>
-            <div class="numbers">15</div>
-            <div class="numbers">20</div>
-            <div class="numbers">25</div>
-            <button id="startButton">Start Quiz</button>
+      <div id="config_container">
+        <h1>Quiz Configuration</h1>
+        <p>Select Category</p>
+        <div id="options">
+          <button class="elem" id="A">Programming</button>
+          <button class="elem" id="B">Geography</button>
+          <button class="elem" id="C">Mathematics</button>
+          <button class="elem" id="D">Entertainment</button>
         </div>
+        <p>No. of Questions</p>
+        <div id="quantity">
+          <button class="numbers">5</button>
+          <button class="numbers">10</button>
+          <button class="numbers">15</button>
+          <button class="numbers">20</button>
+          <button class="numbers">25</button>
+        </div>
+        <button id="startButton">Start Quiz</button>
+      </div>
+
+      <div id="quiz_container">
+        <header class="quiz_header">
+            <h2 class="quiz_title">Quiz Application</h2>
+            <div class="quiz_timer">
+                <span class="material-symbols-rounded">timer</span>
+                <p class="time_duration">15s</p>
+            </div>
+        </header>
+
+        <div class="quiz_content">
+            <h1 class="quiz_question">In javascrapt, how do you create a funcion?</h1>
+            <ul class="answer-options">
+                <li class="answer-option">
+                  <p>Create function myFunction()</p>
+                </li>
+                 <li class="answer-option correct">
+                  <p>function myFunction() </p>
+                  <span class="material-symbols-rounded">check_circle</span>
+                </li>
+                 <li class="answer-option incorrect">
+                  <p>def function myFunction()</p>
+                  <span class="material-symbols-rounded">cancel</span>
+                </li>
+                 <li class="answer-option last-option">
+                  <p>func myFunction()</p>
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-footer">
+          <p class="question-status"><b>2</b> of <b>10 </b>Questions</p>
+          <button class="next-question-btn">
+            Next
+            <span class="material-symbols-rounded">arrow_right_alt</span>
+          </button>
+        </div>
+
+      </div>
     </div>
-</body>
+  </body>
 </html>
