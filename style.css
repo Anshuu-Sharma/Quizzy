@@ -83,7 +83,7 @@ body,#main_container{
 }
 
 #quiz_container{
-    display: none;
+    /* display: none; */
     max-width: 600px;
 }
 .quiz_header{
@@ -156,6 +156,7 @@ li{
 }
 
 #result_container{
+    display: none;
     max-width: 600px;
     padding: 50px;
 }
