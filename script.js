@@ -41,6 +41,7 @@ const startTimer = () => {
     }, 1000);
 }
 
+
 var categories = document.querySelectorAll(".elem");
 categories.forEach((e) => {
     e.addEventListener('click', () => {
@@ -55,6 +56,7 @@ questionQuantities.forEach((e) => {
         numberOfQuestions = e.innerHTML;
     })
 })
+
 
 const getRandomQuestion = () => {
     // This gives all questions of that category
